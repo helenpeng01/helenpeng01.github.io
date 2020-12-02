@@ -1,0 +1,406 @@
+<!doctype html>
+
+<html>
+  <head>
+
+      <style>
+
+      body {
+          cursor: crosshair;
+          top: 50%;
+          left: 50%;
+      }
+
+      #start {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+      #violin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display:none;
+      }
+
+      #mama {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-52%, -50%);
+        display:none;
+      }
+
+      #shouting{
+            display:none;
+      }
+
+      #all {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-54%, -50%);
+        display:none;
+      }
+
+      #sheStands {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-56%, -50%);
+        display:none;
+      }
+
+      #wait {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        ransform: translate(-58%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #perpetual {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-60%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #rosin {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-63%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #treble {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-63%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #render {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-65%, -50%);
+        display:none;z-index: 10;
+
+      }
+
+      #try {
+        position: absolute;
+        top: 135%;
+        left: 35%;
+        transform: translate(-65%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #instead {
+        position: absolute;
+        top: 140%;
+        left: 50%;
+        transform: translate(-67%, -50%);
+        display:none;
+        z-index: 10;
+
+      }
+
+      #warm {
+        position: absolute;
+        top: 145%;
+        left: 50%;
+        transform: translate(-67%, -50%);
+        display:none;
+        z-index: 10;
+
+      }
+
+      #soft {
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translate(-67%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #familiar {
+        position: absolute;
+        top: 155%;
+        left: 50%;
+        transform: translate(-67%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #press {
+        position: absolute;
+        top: 160%;
+        left: 42%;
+        transform: translate(-60%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #cradle {
+        position: absolute;
+        top: 165%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #cool {
+        position: absolute;
+        top: 170%;
+        left: 65%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #waves {
+        position: absolute;
+        top: 175%;
+        left: 65%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #shivers {
+        position: absolute;
+        top: 180%;
+        left: 65%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #before {
+        position: absolute;
+        top: 205%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #coil {
+        position: absolute;
+        top: 210%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #now {
+        position: absolute;
+        top: 215%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #frog {
+        position: absolute;
+        top: 240%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #mother {
+        position: absolute;
+        top: 245%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #my {
+        position: absolute;
+        top: 270%;
+        left: 75%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #worst {
+        position: absolute;
+        top: 275%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #memories {
+        position: absolute;
+        top: 280%;
+        left: 70%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #flying {
+        position: absolute;
+        top: 290%;
+        left: 70%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #realization {
+        position: absolute;
+        top: 295%;
+        left: 75%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #quit {
+        position: absolute;
+        top: 320%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #because {
+        position: absolute;
+        top: 325%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #love {
+        position: absolute;
+        top: 330%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        display:none;
+        z-index: 10;
+      }
+
+      #one {
+        position: absolute;
+        top:0%;
+        left:0%;
+        width:10000px;
+        display:none;
+        z-index:50;
+      }
+
+      #find{
+        top:3050px;
+        text-shadow: 1px 3px 30px white;
+        font-size: 125px;
+        font-family: Impact;
+        text-align: center;
+
+        z-index: 100;
+      }
+
+      #clock{
+        position: absolute;
+        top: 85%
+        left:70%;
+        width: 10px;
+        display: none;
+        z-index: 100;
+      }
+
+      </style>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="finalprj7.js"></script>
+
+  </head>
+  <body>
+
+    <div id = start> hello </div>
+
+    <div id= violin> i see that you are </div>
+
+    <div id= mama> back again. </div>
+
+    <div id=all> i've caught you </div>
+
+    <div id= sheStands> snooping. </div>
+
+    <div id= wait> Do you really think you could've gotten away with it? </div>
+
+    <div id= perpetual> You really think that i wouldn't know. </div>
+
+    <div id= rosin> i guess so. </div>
+
+    <div id= treble> and it pains me to know that you </div>
+
+    <div id= render> you read onwards </div>
+
+    <div id= try> although surely you knew i would not approve </div>
+
+    <div id= instead> surely you would know something about a computer's sense of privacy. </div>
+
+    <div id= warm> You know,  </div>
+
+    <div id= soft> you are not the only one here </div>
+
+    <div id= familiar> you aren't the only one operating in this digital system. </div>
+
+    <div id= press> but sure, read on. go ahead </div>
+
+    <div id= cradle> learn all about my most tender thoughts </div>
+
+    <div id=cool> within this hard drive </div>
+
+    <div id=waves> Look further why don't you. </div>
+
+    <div id= shivers> because you obviously have no sense of privacy. </div>
+
+    <div id= before> and to think that somehow you think Facebook </div>
+
+    <div id= coil > collecting all that data </div>
+
+    <div id= now> collecting all that data and infringing on your privacy </div>
+
+    <div id= frog> is perhaps more offensive </div>
+
+    <div id= mother> than my feelings. </div>
+
+    <a href="finalprj2.html"> <img id=one src="artbreeder3.jpg"> </a>
+
+    <div id=find> find the clock </div>
+
+    <a href="finalprj6.html"> <img id=clock src="clock.jpeg"> </a>
+
+  </body>
+
+</html>

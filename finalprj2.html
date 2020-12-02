@@ -1,0 +1,447 @@
+<!doctype html>
+    <html>
+        <head>
+
+          <script type="text/javascript">
+              function colorChanger(){
+                  var randcol= "";
+                  var allchar="0123456789ABCDEF";
+                  for(var i=0; i<6; i++){
+                     randcol += allchar[Math.floor(Math.random()*16)];
+                  }
+                   document.body.style.backgroundColor= "#"+randcol;
+              }
+          </script>
+
+
+
+          <style>
+              body {
+                  cursor: crosshair;
+
+              }
+
+              #one {
+                position: fixed;
+                top:0;
+                left:0;
+                width:200;
+                  z-index: -100;
+              }
+
+              #three {
+                position: fixed;
+                top:50;
+                left:500px;
+              }
+
+              #four {
+                position: fixed;
+                top:50%;
+                left:1000px;
+              }
+
+              #five {
+                position: fixed;
+                top:50%;
+                left:500px;
+              }
+
+                #text {
+                  top:3050px;
+                  text-shadow: 1px 3px 30px white;
+                  font-size: 125px;
+                  font-family: Impact;
+                  text-align: center;
+                  opacity: 50%;
+                  z-index: 100;
+                }
+
+                #start {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
+
+                #violin {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  display:none;
+                }
+
+                #mama {
+                  position: absolute;
+                  top: 55%;
+                  left: 50%;
+                  transform: translate(-52%, -50%);
+                  display:none;
+                }
+
+                #shouting{
+                      display:none;
+                }
+
+                #all {
+                  position: absolute;
+                  top: 60%;
+                  left: 50%;
+                  transform: translate(-54%, -50%);
+                  display:none;
+                }
+
+                #sheStands {
+                  position: absolute;
+                  top: 65%;
+                  left: 50%;
+                  transform: translate(-56%, -50%);
+                  display:none;
+                }
+
+                #wait {
+                  position: absolute;
+                  top: 70%;
+                  left: 50%;
+                  ransform: translate(-58%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #perpetual {
+                  position: absolute;
+                  top: 80%;
+                  left: 50%;
+                  transform: translate(-60%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #rosin {
+                  position: absolute;
+                  top: 90%;
+                  left: 50%;
+                  transform: translate(-63%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #treble {
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  transform: translate(-63%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #render {
+                  position: absolute;
+                  top: 110%;
+                  left: 50%;
+                  transform: translate(-65%, -50%);
+                  display:none;z-index: 10;
+
+                }
+
+                #try {
+                  position: absolute;
+                  top: 135%;
+                  left: 35%;
+                  transform: translate(-65%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #instead {
+                  position: absolute;
+                  top: 140%;
+                  left: 50%;
+                  transform: translate(-67%, -50%);
+                  display:none;
+                  z-index: 10;
+
+                }
+
+                #warm {
+                  position: absolute;
+                  top: 145%;
+                  left: 50%;
+                  transform: translate(-67%, -50%);
+                  display:none;
+                  z-index: 10;
+
+                }
+
+                #soft {
+                  position: absolute;
+                  top: 150%;
+                  left: 50%;
+                  transform: translate(-67%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #familiar {
+                  position: absolute;
+                  top: 155%;
+                  left: 50%;
+                  transform: translate(-67%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #press {
+                  position: absolute;
+                  top: 160%;
+                  left: 42%;
+                  transform: translate(-60%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #cradle {
+                  position: absolute;
+                  top: 165%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #cool {
+                  position: absolute;
+                  top: 170%;
+                  left: 65%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #waves {
+                  position: absolute;
+                  top: 175%;
+                  left: 65%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #shivers {
+                  position: absolute;
+                  top: 180%;
+                  left: 65%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #before {
+                  position: absolute;
+                  top: 205%;
+                  left: 50%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #coil {
+                  position: absolute;
+                  top: 210%;
+                  left: 50%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #now {
+                  position: absolute;
+                  top: 215%;
+                  left: 50%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #frog {
+                  position: absolute;
+                  top: 240%;
+                  left: 50%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #mother {
+                  position: absolute;
+                  top: 245%;
+                  left: 50%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #my {
+                  position: absolute;
+                  top: 270%;
+                  left: 75%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #worst {
+                  position: absolute;
+                  top: 275%;
+                  left: 50%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #memories {
+                  position: absolute;
+                  top: 280%;
+                  left: 70%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #flying {
+                  position: absolute;
+                  top: 290%;
+                  left: 70%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #realization {
+                  position: absolute;
+                  top: 295%;
+                  left: 75%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #quit {
+                  position: absolute;
+                  top: 320%;
+                  left: 50%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #because {
+                  position: absolute;
+                  top: 325%;
+                  left: 50%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+                #love {
+                  position: absolute;
+                  top: 330%;
+                  left: 50%;
+                  transform: translate(-70%, -50%);
+                  display:none;
+                  z-index: 10;
+                }
+
+        </style>
+
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="finalprj2.js"></script>
+
+        </head>
+
+        <body>
+
+                <div id=text>
+                  i told myself this wouldn’t happen—tht i wouldn’t care and tht this was only a fling—but here i am, on his side of the bed inhaling the scent of his cologne, searching for it in the pillows and near the edge of the blanket where he’d tucked me in, kissed my forehead and then left to catch his flight back to sf, like my life depends on it. cuz the rest of the apartment is bare of him. all of his stuff, gone like he was never here. and i’m searching for the particles of him tht are left, to convince myself he wasn’t a dream and pretend tht he’s still here with me even though his life is at sf. to convince myself that the conversations with me in his arms, left hand draped on the small of my waist and right curled around my shoulder over my chest to hold my hand , his beard resting against my head, scratching, talking abt home and family and dreams and sadness and guilt are just as real as his absence.  because the silence is deafening now.
+             i don’t love him, i’m not foolish and i’ve learned from my rages of emotion. but damn do i wish i could allow myself to love someone like him. damn do i wish i could wake up and trace the dip of his shoulder into his bicep and watch how the sunlight cascades onto his chest and mingles on his eyelashes. that i could just escape into him, into us, whenever i wanted.
+             i wish he’d left something behind, a tshirt or note or sock even. i wish i could hang on to this because even though i know that i can’t have him, even though i know that i might never ever see him or touch him or hear his voice again, what really breaks me is that this exactly is what i chose and will choose. this exactly is what i’m sacrificing for my own freedom and ambition and determination and it kills me that i cant have it all. that for the right people, it’ll never be the right time. that i’m not strong enough to hold someone and so easily let them go.
+             i can barely smell him in the blanket anymore. and there’s an empty tear dried down the side of face.  </div>
+
+                  <label for="hello">CHOOSE</label>
+                  <select name="click" id="nothing">
+                    <option value="click">click</option>
+                    <option value="each">each</option>
+                    <option value="picture">picture</option>
+                    <option value=".">.</option>
+                    <option value="is">is</option>
+                    <option value="there">there</option>
+                    <option value="something">something</option>
+                    <option value="?">?</option>
+                  </select>
+
+                <button onclick="javascript:colorChanger()">Click Me!</button>
+
+                <a href= "finalprj3.html"> <img id=one src="artbreeder1.jpg"> </a>
+
+                <a href= "finalprj5.html"><img id=three src="artbreeder3.jpg"></a>
+
+                <img id=four src="artbreeder4.jpg">
+
+                <a href= "finalprj7.html"><img id=five src="artbreeder5.jpg"></a>
+
+                <div id = start> start </div>
+
+                <div id= violin> Mama started seeing the Man during one of our typical hot summers. When we looked out on our fading baby-blue porch down the gravel driveway those days, the world near the surface looked like it would melt into a version of the butterscotch candies that we sucked to our cheeks. </div>
+
+                <div id= mama> I remember even the mice around the cornfields seemed to slow in the heat, but we, all equal victims of heat, gave them mercy. </div>
+
+                <div id=all> When Mama got back from the fields, the sweat that stuck to her skin and dribbled past her armpits made it look like. </div>
+
+                <div id= sheStands> the sun was trying to melt her away, too. </div>
+
+                <div id= wait> I don’t remember exactly when Mama started seeing the Man, but I do remember Pawpaw grumbling about it in the kitchen afterwards. </div>
+
+                <div id= perpetual> It must’ve been late at night because I remember smelling cigarette smoke drifted from the kitchen and hearing his raspy voice. Mama never let him smoke around us </div>
+
+                <div id= rosin>—I think Mama liked to pretend we didn’t know about it— </div>
+
+                <div id= treble> but we were all familiar with the picture of Pawpaw with a cigarette pressed between his chapped lips sucking in dry wads of air. </div>
+
+                <div id= render> Most nights, though, Mama and Pawpaw would sit around the old oak breakfast table after putting us four kids to bed. </div>
+
+                <div id= try> “Darlene, don’t get yourself into that type of trouble… just think you’ll have to take care of eleven kids on top of all that haulin’ you already do in the fields.” </div>
+
+                <div id= instead> Then, the door slammed shut and all I could hear through the muffled wood was the occasional screeching of chairs as Mama or Pawpaw got up. </div>
+
+                <div id= warm> To this day, I’m not really sure why Mama decided to be with the Man. </div>
+
+                <div id= soft> Its not like we
+needed a real man around the house anyway. </div>
+
+                <div id= familiar> Mama did all the work around the house </div>
+
+                <div id= press> and in the
+yard, and my siblings and I tended to the pigs perfectly fine. </div>
+
+                <div id= cradle> But none of us questioned Mama’s
+actions. </div>
+
+                <div id=cool> Part of it was because it was awkwardly inappropriate to ask Mama about her </div>
+
+                <div id=waves> new lover,</div>
+
+                <div id= shivers> but most of it was because Mama was tall, broad, and we never wanted to risk the next time
+she’d bring out the belt. </div>
+
+                <div id= before> Plus, if Mama knew she’d be taking on another seven kids, she must’ve
+really saw something in the Man. </div>
+
+
+
+        </body>
+    </html>

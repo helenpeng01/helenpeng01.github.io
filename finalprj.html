@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+  <head>
+    <title> story </title>
+
+   <!-- <link rel="shortcut icon" href=""> -->
+
+   <script type="text/javascript">
+       function colorChanger(){
+           var randcol= "";
+           var allchar="0123456789ABCDEF";
+           for(var i=0; i<6; i++){
+              randcol += allchar[Math.floor(Math.random()*16)];
+           }
+            document.body.style.backgroundColor= "#"+randcol;
+       }
+   </script>
+
+      <style>
+        body {
+
+
+
+        }
+
+        #start {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        #violin {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display:none;
+        }
+
+        #mama {
+          position: absolute;
+          top: 55%;
+          left: 50%;
+          transform: translate(-52%, -50%);
+          display:none;
+        }
+
+        #shouting{
+              display:none;
+        }
+
+        #all {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-54%, -50%);
+          display:none;
+        }
+
+        #sheStands {
+          position: absolute;
+          top: 65%;
+          left: 50%;
+          transform: translate(-56%, -50%);
+          display:none;
+        }
+
+        #wait {
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          ransform: translate(-58%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #perpetual {
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translate(-60%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #rosin {
+          position: absolute;
+          top: 90%;
+          left: 50%;
+          transform: translate(-63%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #treble {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-63%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #render {
+          position: absolute;
+          top: 110%;
+          left: 50%;
+          transform: translate(-65%, -50%);
+          display:none;z-index: 10;
+
+        }
+
+        #try {
+          position: absolute;
+          top: 135%;
+          left: 35%;
+          transform: translate(-65%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #instead {
+          position: absolute;
+          top: 140%;
+          left: 50%;
+          transform: translate(-67%, -50%);
+          display:none;
+          z-index: 10;
+
+        }
+
+        #warm {
+          position: absolute;
+          top: 145%;
+          left: 50%;
+          transform: translate(-67%, -50%);
+          display:none;
+          z-index: 10;
+
+        }
+
+        #soft {
+          position: absolute;
+          top: 150%;
+          left: 50%;
+          transform: translate(-67%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #familiar {
+          position: absolute;
+          top: 155%;
+          left: 50%;
+          transform: translate(-67%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #press {
+          position: absolute;
+          top: 160%;
+          left: 42%;
+          transform: translate(-60%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #cradle {
+          position: absolute;
+          top: 165%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #cool {
+          position: absolute;
+          top: 170%;
+          left: 65%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #waves {
+          position: absolute;
+          top: 175%;
+          left: 65%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #shivers {
+          position: absolute;
+          top: 180%;
+          left: 65%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #before {
+          position: absolute;
+          top: 205%;
+          left: 50%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #coil {
+          position: absolute;
+          top: 210%;
+          left: 50%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #now {
+          position: absolute;
+          top: 215%;
+          left: 50%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #frog {
+          position: absolute;
+          top: 240%;
+          left: 50%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #mother {
+          position: absolute;
+          top: 245%;
+          left: 50%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #my {
+          position: absolute;
+          top: 270%;
+          left: 75%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #worst {
+          position: absolute;
+          top: 275%;
+          left: 50%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #memories {
+          position: absolute;
+          top: 280%;
+          left: 70%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #flying {
+          position: absolute;
+          top: 290%;
+          left: 70%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #realization {
+          position: absolute;
+          top: 295%;
+          left: 75%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #quit {
+          position: absolute;
+          top: 320%;
+          left: 50%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #because {
+          position: absolute;
+          top: 325%;
+          left: 50%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #love {
+          position: absolute;
+          top: 330%;
+          left: 50%;
+          transform: translate(-70%, -50%);
+          display:none;
+          z-index: 10;
+        }
+
+        #violinpic {
+              position: absolute;
+              top: 20%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              display:none;
+              z-index: 10;
+          }
+
+          #screamingmouth {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            opacity:50%;
+            display:none;
+            z-index: 10;
+
+        }
+
+        #shatteringglass {
+          position: absolute;
+          top: 65%;
+          left: 10%;
+          width:700px;
+          opacity:50%;
+          display:none;
+          z-index: -10:
+      }
+
+      #wringedjoints {
+        position: absolute;
+        top: 80%;
+        left: 2%;
+        opacity:50%;
+        display:none;
+    }
+
+      #fingerprint {
+      position: absolute;
+      top: 100%;
+      left: 65%;
+      opacity:50%;
+      display:none;
+      }
+
+      #violinpress {
+      position: absolute;
+      top: 150%;
+      left: 55%;
+      opacity:50%;
+      display:none;
+      }
+
+      #string {
+      position: absolute;
+      top: 180%;
+      left: 24%;
+      opacity:50%;
+      display:none;
+      }
+
+      #nothing{
+        position: fixed;
+        display:none;
+        color: pink;
+      }
+          }
+
+      </style>
+
+      <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+      <script src="finalprj.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id = start> start </div>
+
+    <div id= violin> VIOLIN </div>
+
+    <div id= mama> mama has always been all mouth </div>
+
+    <div id=all> all boiling barks, breaking chords, and twisting tongues </div>
+
+    <div id= sheStands> she stands, ready to break like hot glass, </div>
+
+    <div id= wait> and i try not to wait for the moment she does. </div>
+
+    <div id= perpetual> a perpetual motion of wringed joints pressed against Bach's insensitive fingerings, </div>
+
+    <div id= rosin> hard lines of rosin, </div>
+
+    <div id= treble> and treble clefs </div>
+
+    <div id= render> render her fearless in her assaults. </div>
+
+    <div id= try> i try not to notice the sweat gathering in the crests of my fingerprints </div>
+
+    <div id= instead> and instead concentrate on balancing the slender violin neck between my fingertips. </div>
+
+    <div id= warm> The wood is warm, </div>
+
+    <div id= soft> soft, </div>
+
+    <div id= familiar> familiar, </div>
+
+    <div id= press> and I press the base of my violin further into my neck and tilt my chin </div>
+
+    <div id= cradle> -- a cradle. </div>
+
+    <div id=cool> when the callouses of my fingertips touch the cool strings, my fingers comply </div>
+
+    <div id=waves> as if extensions of my forearms send signals of my own nervousness to sound waves. </div>
+
+    <div id= shivers> the sound shivers. </div>
+
+    <div id= before> before, the spring flesh below my nail was tender. </div>
+
+    <div id= coil > the coils of the string used to vibrate in angry rebellion against their immaturity </div>
+
+    <div id= now> now, i can barely feel my fingertips when they touch the string. </div>
+
+    <div id= frog> when i pull the bow from the frog to a series of chords, </div>
+
+    <div id= mother> it becomes a competition with my mother. </div>
+
+    <div id= my> my violin, </div>
+
+    <div id= worst> it brings out the worst in me. </div>
+
+    <div id= memories> it brings back memories of torn pages from The Hobbit, </div>
+
+    <div id=flying> flying music stands, </div>
+
+    <div id= realization> and the realization that I could not love the violin as much as Mama wanted me to. </div>
+
+    <div id= quit> i didn't quit because Mama's mouth was louder than my strings. </div>
+
+    <div id= because> i did it because </div>
+
+    <div id= love> i didn't have enough love for both. </div>
+
+
+     <a href=finalprj3.html> <img id=violinpic src="violin.jpeg"> </a>
+
+     <button onclick="javascript:colorChanger()">Click Me!</button>
+
+     <img id=screamingmouth src="screamingmouth.jpeg">
+
+      <img id=shatteringglass src="shatteringglass.jpg">
+
+      <img id=wringedjoints src="wringedjoints.jpg">
+
+        <img id=fingerprint src="fingerprint.jpeg">
+
+        <img id=violinpress src="violinpress.jpeg">
+
+        <img id=string src="string.jpg">
+
+        <select name="click" id="nothing">
+          <option value="click">scroll</option>
+          <option value="each">to</option>
+          <option value="picture">top</option>
+          <option value=".">and</option>
+          <option value="is">see</option>
+          <option value="there">whats</option>
+          <option value="something">new</option>
+          <option value="?">click</option>
+        </select>
+  </body>
+  <script>
+
+  </script>
+</html>
